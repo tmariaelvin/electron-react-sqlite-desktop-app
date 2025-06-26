@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",  // Change from ES6 to ES2020 to support optional chaining and nullish coalescing
+    "module": "CommonJS",
+    "outDir": "../build/electron",
+    "rootDir": "./",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "lib": ["ES2020", "DOM"],  // Update lib to include ES2020
+    "typeRoots": ["../node_modules/@types"],
+    "types": ["node"]
+  },
+  "include": ["./**/*.ts"],
+  "exclude": ["node_modules", "../app"]
+}
